@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+deploy-prod:
+  image: "node:12"
+  stage: deploy
+  only:
+    - master
+  script:
+    - cd api
+    - npm i @cloudflare/wrangler
+    - npm run publish-prod
