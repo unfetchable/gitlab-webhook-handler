@@ -1,0 +1,19 @@
+{
+    "name": "gitlab-webhook-handler-api",
+    "version": "1.0.0",
+    "description": "An intermediary for GitLab webhook events to provide rich Discord notifications",
+    "main": "src/index.js",
+    "author": "Alex Nakos <hello@alexnakos.com>",
+    "scripts": {
+      "publish-prod": "wrangler publish --env prod"
+    },
+    "dependencies": {
+      "itty-router": "^2.3.10",
+      "uuid": "^8.3.2",
+      "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+      "eslint": "^7.31.0"
+    }
+  }
+  
