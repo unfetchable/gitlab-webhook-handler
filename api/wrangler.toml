@@ -1,0 +1,19 @@
+name = "gitlab-webhook-handler"
+type = "webpack"
+account_id = "4327cb5c94e7ca3e5c5e1b3227722738"
+zone_id = "f8ff397426356e328b48ef70b19732f4"
+
+[env.dev]
+workers_dev = true
+vars = { ENV = "dev" }
+kv_namespaces = [
+    { binding = "KV", id = "75b24e43a7d3468ab916131cf7377989", preview_id = "75b24e43a7d3468ab916131cf7377989" }
+]
+
+[env.prod]
+workers_dev = false
+route = "gitlab-api.xela.tech/*"
+vars = { ENV = "prod" }
+kv_namespaces = [
+    { binding = "KV", id = "018fbf5ec2fc4a08a9f1848f23b2fc4c" }
+]
