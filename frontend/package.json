@@ -1,0 +1,48 @@
+{
+    "name": "gitlab-webhook-handler-frontend",
+    "version": "1.0.0",
+    "description": "An intermediary for GitLab webhook events to provide rich Discord notifications",
+    "author": "Alex Gokhale <hello@alexgokhale.com>",
+    "dependencies": {
+      "@chakra-ui/toast": "^1.3.1",
+      "@chakra-ui/system": "^1.7.3",
+      "@craco/craco": "^6.2.0",
+      "@emotion/react": "^11.4.1",
+      "@emotion/styled": "^11.3.0",
+      "@headlessui/react": "^1.4.1",
+      "@heroicons/react": "^1.0.4",
+      "framer-motion": "^4.1.17",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2",
+      "react-router-dom": "^5.2.0",
+      "react-scripts": "4.0.3"
+    },
+    "devDependencies": {
+      "autoprefixer": "^9.8.6",
+      "postcss": "^7.0.36",
+      "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.9",
+      "eslint": "^7.32.0",
+      "eslint-plugin-react": "^7.25.1"
+    },
+    "scripts": {
+      "start": "craco start",
+      "build": "craco build",
+      "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+      "extends": "react-app"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+  
